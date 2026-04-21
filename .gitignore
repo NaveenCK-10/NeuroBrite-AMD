@@ -1,1 +1,42 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables (IMPORTANT)
+.env
+.env.local
+.env.development
+.env.production
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Vite
+.vite/
+
+# Temporary files
+*.log
+*.tmp
+
+# Coverage
+coverage/
+
+# Misc
+*.swp

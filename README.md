@@ -1,198 +1,205 @@
+<div align="center">
+
 # 🧠 NeuroBite
 
-### *"Your food has a story. We read it."*
+### *Your food has a story. We read it.*
 
-> **Food Psychology Intelligence Engine** — powered by Gemini AI
+**The first AI that doesn't ask what you ate — it asks why.**
 
-[![Built with React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://react.dev)
-[![Styled with Tailwind](https://img.shields.io/badge/Tailwind-3.4-38B2AC?logo=tailwindcss)](https://tailwindcss.com)
-[![AI by Gemini](https://img.shields.io/badge/Gemini-AI-4285F4?logo=google)](https://ai.google.dev)
+[![React 18](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)](https://react.dev)
+[![Gemini AI](https://img.shields.io/badge/Gemini_2.0-Flash-4285F4?style=flat-square&logo=google)](https://ai.google.dev)
+[![Framer Motion](https://img.shields.io/badge/Framer-Motion-FF0055?style=flat-square&logo=framer)](https://www.framer.com/motion/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=flat-square&logo=tailwindcss)](https://tailwindcss.com)
+
+</div>
 
 ---
 
-## 🚀 What Makes NeuroBite Different
-
-Every food app asks **WHAT** you ate. NeuroBite asks **WHY**.
-
-NeuroBite is NOT a calorie counter. It's a **behavioral intelligence system** that:
-
-- 🧠 **Detects emotional eating patterns** you've never noticed
-- 🔮 **Predicts cravings before they happen** with confidence scores
-- ⚡ **Delivers behavioral nudges** at the right moment
-- 🗣️ **Chats like a food psychologist** — warm, insightful, never judgmental
-- 📊 **Visualizes mood-food neural connections** in real-time
+> **62% of eating decisions are driven by emotions, not hunger.**
+> NeuroBite makes the invisible visible.
 
 ---
 
 ## 🎯 The Problem
 
-Most people know WHAT to eat. The problem is they eat differently when stressed, bored, tired, or anxious — and they don't know WHY.
+Every food app on the market does the same thing: count calories.
 
-**62% of eating decisions are driven by emotions, not hunger.**
+But calories don't explain why you demolished a bag of chips at 3 PM. Or why you skip meals when anxious. Or why stress always ends in sugar.
 
-NeuroBite makes the invisible visible.
+**People don't have an information problem. They have a self-awareness problem.**
 
----
-
-## ⚙️ Tech Stack
-
-| Layer | Technology |
-|-------|-----------|
-| Frontend | React 18 + Vite |
-| Styling | Tailwind CSS 3 + Custom Glassmorphism |
-| Animation | Framer Motion |
-| AI Engine | Google Gemini 2.0 Flash |
-| Backend | Express.js (optional) |
-| Icons | Lucide React |
+No app addresses the psychology behind the plate.
 
 ---
 
-## 🏗️ Quick Start
+## 💡 The Solution
 
-```bash
-# Clone & install
-cd neurobite
-npm install
+NeuroBite is a **Food Psychology Intelligence Engine** — an AI system that detects emotional eating patterns, predicts cravings before they strike, and delivers behavioral nudges that actually change habits.
 
-# (Optional) Add your Gemini API key
-cp .env.example .env
-# Edit .env with your key from https://aistudio.google.com/app/apikey
+It doesn't count your calories. It reads your behavior.
 
-# Start development server
-npm run dev
+| Traditional Food Apps | NeuroBite |
+|---|---|
+| Track what you ate | Understand *why* you ate it |
+| React after meals | **Predict** cravings before they hit |
+| Passive logging | **Proactive** behavioral intervention |
+| Generic tips | Personalized AI food psychology |
+| Static dashboards | **Live** neural pattern mapping |
 
-# (Optional) Start backend API
-npm run server
+---
 
-# Start both frontend + backend
-npm run dev:all
+## ⚡ Key Features
+
+### 🔮 Proactive Behavioral Nudge
+The AI detects vulnerability patterns and delivers unprompted interventions — *before* you open the fridge. No app does this.
+
+### 🧠 Multi-Step AI Reasoning
+Watch the AI think in real-time: **Scanning → Detecting → Analyzing → Generating**. Every response follows an Observation → Pattern → Insight → Suggestion framework.
+
+### 📊 Craving Prediction Engine
+NeuroBite forecasts your next craving with a confidence score, expected time window, and a smart counter-strategy — before you even feel the urge.
+
+### 🗺️ Food-Mood Neural Map
+An interactive visualization that maps the hidden connections between your emotions and eating patterns. Hover to explore correlations.
+
+### 💬 AI Food Psychologist
+A conversational AI trained in food psychology — warm, insightful, and never judgmental. It references your actual data to deliver responses that feel uncomfortably personal.
+
+---
+
+## 🧠 How It Works
+
+```
+1. LOG      →  Tell NeuroBite what you ate and how you felt
+                (Interactive mood wheel + context tags)
+
+2. DETECT   →  AI identifies emotional triggers and hidden patterns
+                (Stress → Sugar pipeline, 3PM vulnerability window)
+
+3. PREDICT  →  System forecasts your next craving
+                (Time, type, confidence score)
+
+4. NUDGE    →  Proactive behavioral intervention appears
+                (Unprompted — the AI reaches out to YOU)
+
+5. EVOLVE   →  Patterns shift over time as awareness grows
+                (Weekly intelligence reports track progress)
 ```
 
-> **Note:** NeuroBite works WITHOUT an API key using intelligent mock AI responses crafted with real food psychology research. Add a Gemini key for live AI.
+---
+
+## 🎨 UI/UX Highlights
+
+NeuroBite doesn't look like a health app. It looks like a **neural intelligence dashboard**.
+
+- **Dark futuristic theme** — premium, not clinical
+- **Glassmorphism** — frosted glass cards with blur + depth
+- **Animated particle field** — living canvas with cyan/purple neural nodes
+- **Multi-step AI thinking** — visible reasoning steps with checkmark completions
+- **Micro-animations everywhere** — cubic-bezier entrance curves, hover glows, and spring physics
+- **Premium typography** — Inter + Outfit from Google Fonts with subpixel rendering
 
 ---
 
-## 📱 Features
+## 🛠️ Tech Stack
 
-### 1. Behavioral Intelligence Dashboard
-- Live AI analysis of your eating patterns
-- Craving prediction with confidence percentage
-- Interactive Food-Mood Neural Map
-- Animated stat counters and mood distribution
-
-### 2. Smart Food-Mood Logger
-- Interactive mood wheel with 8 emotional states
-- Natural language food description
-- Context tagging (alone/social, home/work, planned/impulsive)
-- Instant AI behavioral feedback on every entry
-
-### 3. Pattern Discovery (Insights)
-- AI-generated weekly behavioral report
-- Pattern severity cards
-- Stressed vs. Happy food comparison
-- Full neural correlation map
-
-### 4. AI Food Psychologist (Chat)
-- Conversational food psychology AI
-- Streaming typewriter responses
-- "Thinking" state animations
-- Suggested questions for quick engagement
+| Layer | Technology |
+|---|---|
+| **Frontend** | React 18 + Vite 5 |
+| **Styling** | Tailwind CSS 3.4 + Custom Glassmorphism System |
+| **Animation** | Framer Motion 11 |
+| **AI Engine** | Google Gemini 2.0 Flash |
+| **Routing** | React Router 6 |
+| **Icons** | Lucide React |
+| **State** | React Context + localStorage persistence |
 
 ---
 
-## 🎨 Design Philosophy
+## 🚀 Demo Flow — What to Do
 
-- **Dark futuristic theme** — professional, not clinical
-- **Glassmorphism** — frosted glass cards with blur effects
-- **Neural particle background** — animated canvas with cyan/purple nodes
-- **Micro-animations** — every element animates smoothly on entry
-- **Gradient accents** — cyan → purple signature gradient
-- **Premium typography** — Inter + Outfit from Google Fonts
+| Step | Action | What You'll See |
+|---|---|---|
+| **1** | Open the app | Particle animation + emotional stat hook |
+| **2** | Click **"Skip to Demo"** | Dashboard with pre-seeded 7-day behavioral data |
+| **3** | Wait 4 seconds | ⚡ **Proactive Nudge** appears unprompted (the wow moment) |
+| **4** | Watch the AI Analysis card | Multi-step reasoning: Scanning → Analyzing → Insight |
+| **5** | Navigate to **AI Chat** | Ask: *"Why do I eat when I'm bored?"* |
+| **6** | Open **Insights** | Weekly intelligence report + neural map |
 
----
-
-## 🧠 AI Architecture
-
-NeuroBite uses a layered AI approach:
-
-1. **System Prompt** — Trained as a food psychologist, never judgmental
-2. **Pattern Analysis** — Detects stress-sugar, boredom-snacking, time-based patterns
-3. **Craving Prediction** — Uses temporal + emotional patterns to forecast
-4. **Behavioral Nudges** — Context-aware interventions
-5. **Conversational AI** — Full chat with history and data awareness
-
-### AI Principles
-- Ask reflective questions instead of giving direct answers
-- Identify emotional triggers behind food choices
-- Never shame or restrict — redirect and reframe
-- Reference the user's actual data patterns
+> 💡 **Judge tip:** The proactive nudge is the signature feature. It appears without any user action — the AI reaches out first.
 
 ---
 
-## 📊 Demo Flow (5 Minutes)
+## 📦 Setup — 60 Seconds
 
-| Time | Action | Impact |
-|------|--------|--------|
-| 0:00 | Landing page loads | Particle animation + tagline wow |
-| 0:30 | Quick onboarding quiz | Personalization + engagement |
-| 1:00 | Dashboard reveals pre-seeded data | AI analysis types live |
-| 2:00 | Craving prediction appears | "It knew!" moment |
-| 2:30 | Log a new entry with mood | Interactive mood wheel |
-| 3:00 | AI gives instant behavioral insight | "This is smart" moment |
-| 3:30 | Open Neural Map | Visual wow factor |
-| 4:00 | Chat with AI psychologist | "Why do I eat when bored?" |
-| 4:30 | Show Insights page | Weekly behavioral report |
-| 5:00 | Close with pitch | Lasting impression |
+```bash
+# 1. Install dependencies
+npm install
 
----
+# 2. Start the app
+npm run dev
+```
 
-## 🏆 Pitch
+Open **http://localhost:5173** — that's it.
 
-> "Every food app asks WHAT you ate. NeuroBite asks WHY.
+> **No API key needed.** NeuroBite ships with intelligent mock AI responses built on real food psychology research. Every feature works out of the box.
 >
-> We built a Food Psychology Intelligence Engine that uses Gemini AI to detect emotional eating patterns, predict cravings before they happen, and deliver behavioral nudges that actually change habits.
->
-> This isn't a calorie counter with a pretty UI. This is a food psychologist in your pocket — and it gets smarter every meal."
+> To enable live Gemini AI, add your key:
+> ```bash
+> cp .env.example .env
+> # Add your key from https://aistudio.google.com/app/apikey
+> ```
 
 ---
 
-## 📁 Project Structure
+## 📁 Architecture
 
 ```
 neurobite/
-├── public/
-├── server/
-│   └── index.js            # Express API (optional)
 ├── src/
 │   ├── components/
-│   │   ├── GlassCard.jsx        # Glassmorphic container
-│   │   ├── MoodWheel.jsx        # Interactive emotion selector
-│   │   ├── Navbar.jsx           # Navigation bar
-│   │   ├── NeuralMap.jsx        # Food-mood correlation viz
-│   │   ├── ParticleBackground.jsx   # Canvas particle animation
-│   │   └── StreamingText.jsx    # Typewriter AI effect
-│   ├── data/
-│   │   └── seedData.js          # 7-day demo data
-│   ├── lib/
-│   │   ├── ai.js                # Gemini + mock AI engine
-│   │   └── store.jsx            # Global state (Context)
+│   │   ├── GlassCard.jsx          # Glassmorphic container system
+│   │   ├── MoodWheel.jsx          # Interactive emotion selector
+│   │   ├── NeuralMap.jsx          # Food-mood correlation viz
+│   │   ├── ProactiveNudge.jsx     # Unprompted behavioral alert
+│   │   ├── StreamingText.jsx      # Multi-step AI reasoning display
+│   │   └── ParticleBackground.jsx # Animated neural canvas
 │   ├── pages/
-│   │   ├── AIChat.jsx           # AI psychologist chat
-│   │   ├── Dashboard.jsx        # Main intelligence hub
-│   │   ├── Insights.jsx         # Pattern analysis
-│   │   ├── Landing.jsx          # Hero + onboarding
-│   │   └── LogEntry.jsx         # Food-mood logger
-│   ├── App.jsx
-│   ├── index.css                # Design system
-│   └── main.jsx
-├── package.json
-├── tailwind.config.js
-└── vite.config.js
+│   │   ├── Landing.jsx            # Hero + onboarding
+│   │   ├── Dashboard.jsx          # Intelligence command center
+│   │   ├── LogEntry.jsx           # Food-mood logger
+│   │   ├── Insights.jsx           # Behavioral analysis
+│   │   └── AIChat.jsx             # AI psychologist chat
+│   ├── lib/
+│   │   ├── ai.js                  # Gemini + structured mock engine
+│   │   └── store.jsx              # Context + localStorage persistence
+│   └── data/
+│       └── seedData.js            # 7-day demo behavioral data
 ```
 
 ---
 
-## 📄 License
+## 🏆 Why This Wins
 
-MIT — Built for AMD x AU Hackathon 2026
-"# NeuroBrite-AMD" 
+**1. It solves a real problem differently.**
+Every food app counts calories. NeuroBite is the only one that reads emotional eating behavior and intervenes proactively.
+
+**2. The AI doesn't wait — it acts.**
+The Proactive Nudge is a genuine product innovation. The system detects behavioral risk patterns and delivers interventions *before* the user asks for help. No consumer health app does this.
+
+**3. It demonstrates product thinking, not just code.**
+This isn't a wrapper around an API. It's a complete behavioral intelligence system with a clear thesis: *the problem isn't what people eat — it's why they eat it.*
+
+**4. It's demo-proof.**
+Pre-seeded data, localStorage persistence, intelligent mock AI. Every feature works perfectly without a network connection or API key. Refresh the page — nothing breaks.
+
+---
+
+<div align="center">
+
+*Every food app asks what you ate.*
+*NeuroBite asks why.*
+
+**Built for AMD x AU Hackathon 2026**
+
+</div>
