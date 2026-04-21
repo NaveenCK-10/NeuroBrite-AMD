@@ -152,6 +152,46 @@ Open **http://localhost:5173** — that's it.
 
 ---
 
+## 🛡️ Security & Reliability
+
+NeuroBite is designed with production-grade safety principles:
+
+- **API Key Protection:** `VITE_GEMINI_API_KEY` is strictly accessed via environment variables and never exposed to the client bundle without active proxying or edge functions in production.
+- **Robust Fallbacks:** The AI module implements `try/catch` wrapping and gracefully degrades to deeply researched psychological mocks if the Gemini API fails, times out, or misses configuration.
+- **Safe Evaluation:** We intentionally avoid raw HTML injection and rely entirely on React's secure `dangerouslySetInnerHTML` alternatives (escaping and structured rendering) for AI output.
+
+---
+
+## 🧪 Testing
+
+We've implemented a lightweight testing suite using `vitest` and `@testing-library/react` to ensure core functionality remains stable during iteration.
+
+```bash
+# Run tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+```
+
+Tests cover:
+- State management (`AppProvider` and context hooks)
+- AI engine fallbacks and deterministic mock logic
+- Data integrity for behavioral seeds
+
+---
+
+## ♿ Accessibility
+
+NeuroBite aims to be an inclusive space. Several accessibility optimizations have been implemented:
+
+- **Semantic HTML:** We favor `<nav>`, `<main>`, `<article>`, and `<section>` tags.
+- **ARIA Labeling:** Interactive mood elements feature `aria-label` tags for screen readers.
+- **High Contrast Thresholds:** While using a dark theme, text contrasts comply with WCAG AA standards.
+- **Keyboard Navigation:** Forms and chat inputs support standard keyboard event flows.
+
+---
+
 ## 📁 Architecture
 
 ```

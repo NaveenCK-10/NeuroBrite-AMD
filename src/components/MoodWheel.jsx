@@ -64,6 +64,8 @@ export default function MoodWheel({ selected, onSelect, size = 'large' }) {
             onClick={() => onSelect(mood.id)}
             onMouseEnter={() => setHovered(mood.id)}
             onMouseLeave={() => setHovered(null)}
+            aria-label={`Select mood: ${mood.label}`}
+            aria-pressed={isSelected}
             className="absolute flex flex-col items-center gap-1 transition-all duration-300"
             style={{
               left: x - (isLarge ? 28 : 22),

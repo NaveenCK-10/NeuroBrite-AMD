@@ -71,7 +71,7 @@ export default function StreamingText({
   // ---- Thinking Phase ----
   if (phase === 'thinking') {
     return (
-      <div className={`space-y-2 ${className}`}>
+      <div className={`space-y-2 ${className}`} role="status" aria-label="AI is thinking">
         {steps.map((step, i) => (
           <div
             key={i}
@@ -117,10 +117,10 @@ export default function StreamingText({
 
   // ---- Streaming Phase ----
   return (
-    <div className={className}>
+    <div className={className} aria-live="polite">
       <div className="whitespace-pre-wrap leading-relaxed">
         {renderMarkdown(displayed)}
-        {!isDone && <span className="typing-cursor" />}
+        {!isDone && <span className="typing-cursor" aria-hidden="true" />}
       </div>
     </div>
   );
