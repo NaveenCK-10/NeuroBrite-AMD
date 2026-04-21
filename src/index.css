@@ -1,0 +1,339 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   NEUROBITE — Design System
+   ============================================ */
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(139, 92, 246, 0.3) transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: rgba(139, 92, 246, 0.3);
+    border-radius: 3px;
+  }
+
+  ::selection {
+    background: rgba(6, 182, 212, 0.3);
+    color: white;
+  }
+
+  body {
+    background: #050508;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Card */
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 1rem;
+  }
+
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+  }
+
+  .glass-hover {
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, box-shadow;
+  }
+
+  .glass-hover:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(6, 182, 212, 0.25);
+    box-shadow: 0 4px 24px rgba(6, 182, 212, 0.08), 0 0 0 1px rgba(6, 182, 212, 0.1);
+    transform: translateY(-2px);
+  }
+
+  .glass-hover:active {
+    transform: translateY(0);
+    transition-duration: 0.1s;
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #f43f5e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-cyan {
+    background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-purple {
+    background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Gradient Border */
+  .gradient-border {
+    position: relative;
+    border: none;
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.5), rgba(139, 92, 246, 0.5));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  /* Glow Effects */
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.15), 0 0 60px rgba(6, 182, 212, 0.05);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.15), 0 0 60px rgba(139, 92, 246, 0.05);
+  }
+
+  .glow-emerald {
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.15), 0 0 60px rgba(16, 185, 129, 0.05);
+  }
+
+  /* Button Styles */
+  .btn-primary {
+    @apply relative overflow-hidden px-6 py-3 rounded-xl font-semibold text-white;
+    background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform, box-shadow;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(6, 182, 212, 0.25), 0 0 0 1px rgba(6, 182, 212, 0.15);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0) scale(0.98);
+    transition-duration: 0.1s;
+  }
+
+  .btn-primary::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
+    opacity: 0;
+    transition: opacity 0.35s;
+  }
+
+  .btn-primary:hover::after {
+    opacity: 1;
+  }
+
+  .btn-ghost {
+    @apply px-6 py-3 rounded-xl font-semibold text-white/70 border border-white/10;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-ghost:hover {
+    @apply text-white border-white/30;
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .btn-ghost:active {
+    transform: scale(0.98);
+    transition-duration: 0.1s;
+  }
+
+  /* Shimmer Loading */
+  .shimmer {
+    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.05) 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+  }
+
+  /* Typing Cursor */
+  .typing-cursor::after {
+    content: '|';
+    animation: blink 1s ease-in-out infinite;
+    color: #06b6d4;
+    font-weight: 300;
+    margin-left: 1px;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  /* Mood Colors */
+  .mood-stressed { --mood-color: #ef4444; }
+  .mood-happy { --mood-color: #22c55e; }
+  .mood-sad { --mood-color: #3b82f6; }
+  .mood-bored { --mood-color: #a855f7; }
+  .mood-anxious { --mood-color: #f97316; }
+  .mood-tired { --mood-color: #6366f1; }
+  .mood-excited { --mood-color: #eab308; }
+  .mood-calm { --mood-color: #06b6d4; }
+
+  /* Particle Canvas */
+  .particle-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  /* Page Container */
+  .page-container {
+    @apply relative z-10 min-h-screen;
+  }
+
+  /* Neural Connection Animation */
+  .neural-pulse {
+    animation: neural-pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes neural-pulse {
+    0%, 100% { stroke-opacity: 0.2; stroke-width: 1; }
+    50% { stroke-opacity: 0.8; stroke-width: 2.5; }
+  }
+
+  /* Floating Label */
+  .floating-label {
+    @apply absolute left-4 top-1/2 -translate-y-1/2 text-white/40 transition-all duration-300 pointer-events-none;
+  }
+
+  .floating-label.active {
+    @apply -translate-y-[2.2rem] text-xs text-neuro-accent;
+  }
+
+  /* Animated Gradient Border */
+  .animate-border-glow {
+    background: conic-gradient(
+      from var(--angle, 0deg),
+      transparent 0%,
+      rgba(6, 182, 212, 0.6) 10%,
+      rgba(139, 92, 246, 0.6) 20%,
+      transparent 30%
+    );
+    animation: spin-glow 3s linear infinite;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    padding: 1.5px;
+  }
+
+  @keyframes spin-glow {
+    to { --angle: 360deg; }
+  }
+
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  /* Live indicator card */
+  .live-card {
+    position: relative;
+  }
+
+  .live-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1.5px;
+    background: linear-gradient(
+      135deg,
+      rgba(6, 182, 212, 0.4) 0%,
+      rgba(139, 92, 246, 0.2) 50%,
+      rgba(6, 182, 212, 0.4) 100%
+    );
+    background-size: 200% 200%;
+    animation: gradient-flow 4s ease-in-out infinite;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  @keyframes gradient-flow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* Risk Score */
+  .risk-ring {
+    transform-origin: center;
+    stroke-dasharray: 245;
+    transition: stroke-dashoffset 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Shimmer animation keyframe */
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  /* Nudge entrance */
+  .nudge-card {
+    box-shadow:
+      0 0 30px rgba(6, 182, 212, 0.15),
+      0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Stat counter glow */
+  .stat-glow {
+    text-shadow: 0 0 16px rgba(255, 255, 255, 0.15), 0 0 40px currentColor;
+  }
+
+  /* Smooth focus rings for inputs */
+  input:focus,
+  textarea:focus {
+    box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.15);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
