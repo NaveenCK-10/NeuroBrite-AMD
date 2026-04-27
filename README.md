@@ -1,10 +1,16 @@
 <div align="center">
 
-# 🧠 NeuroBite - https://neurobite-app-514753003477.asia-south1.run.app/
+# 🧠 NeuroBite - 
 
 ### *Your food has a story. We read it.*
 
 **The first AI that doesn't ask what you ate — it asks why.**
+
+## 🌐 Live Demo
+
+👉 https://neurobite-app-514753003477.asia-south1.run.app/
+
+Experience NeuroBite in action — no setup required.
 
 [![React 18](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)](https://react.dev)
 [![Gemini AI](https://img.shields.io/badge/Gemini_2.0-Flash-4285F4?style=flat-square&logo=google)](https://ai.google.dev)
