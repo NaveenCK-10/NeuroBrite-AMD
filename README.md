@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 NeuroBite - 
+# 🧠 NeuroBite 
 
 ### *Your food has a story. We read it.*
 
