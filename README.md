@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 NeuroBite
+# 🧠 NeuroBite - https://neurobite-app-514753003477.asia-south1.run.app/
 
 ### *Your food has a story. We read it.*
 
